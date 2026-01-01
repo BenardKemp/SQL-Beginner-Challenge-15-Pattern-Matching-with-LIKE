@@ -15,14 +15,13 @@ cursor.execute("INSERT INTO products (product_id, name, category, price) " \
 cursor.execute("INSERT INTO products (product_id, name, category, price) " \
 " VALUES (102, 'Mechanical Keyboard', 'Accessories', 89.00)")
 cursor.execute("INSERT INTO products (product_id, name, category, price) " \
-" VALUES (103, '27-inch Monitor', 'Displays', 299.99)")
+" VALUES (103, 'USB-C Hub', 'Accessories', 34.50)")
 cursor.execute("INSERT INTO products (product_id, name, category, price) " \
-" VALUES (104, 'USB-C Hub', 'Accessories', 34.50)")
+" VALUES (104, 'USB Flash Drive', 'Accessories', 19.99)")
 cursor.execute("INSERT INTO products (product_id, name, category, price) " \
 " VALUES (105, 'Laptop Stand', 'Workspace', 39.90)")
 cursor.execute("INSERT INTO products (product_id, name, category, price) " \
 " VALUES (106, 'Webcam', 'Accessiores', 59.90)")
-
 
 conn.commit()
 conn.close()

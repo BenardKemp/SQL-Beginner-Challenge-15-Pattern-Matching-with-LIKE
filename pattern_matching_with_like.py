@@ -1,12 +1,12 @@
 import sqlite3
 
-def filter_ranges_with_between():
+def pattern_matching_like():
     # Connect to a local SQLite database (example.db)
     conn = sqlite3.connect("example.db")
     cursor = conn.cursor()
 
-    # SQL query for Challenge #14
-    query = "SELECT name, price FROM products WHERE price BETWEEN 30 AND 100"
+    # SQL query for Challenge #15
+    query = "SELECT name, price FROM products WHERE name LIKE '%USB%'"
 
     cursor.execute(query)
     rows = cursor.fetchall()
@@ -19,4 +19,4 @@ def filter_ranges_with_between():
 
 
 if __name__ == "__main__":
-    filter_ranges_with_between()
+    pattern_matching_like()
